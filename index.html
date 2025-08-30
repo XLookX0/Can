@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Teachable Machine + MQTT (Drink Can Detector)</title>
+  <title>Teachable Machine + MQTT (แยกผัก + MQTT)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.4/dist/teachablemachine-image.min.js"></script>
@@ -88,7 +88,7 @@
   </style>
 </head>
 <body style="text-align:center; font-family:sans-serif;">
-  <h2>🥤 Drink Can Detector + MQTT</h2>
+  <h2>แยกผัก + MQTT</h2>
   <div>
     <button onclick="init('environment')">Start (Back Camera)</button>
     <button onclick="init('user')">Start (Front Camera)</button>
@@ -100,8 +100,8 @@
   <div id="label-container"></div>
 
   <script type="text/javascript">
-    const URL = "https://teachablemachine.withgoogle.com/models/8ubkLUPkL/";
-    const MQTT_TOPIC = "LookX";
+    const URL = "https://teachablemachine.withgoogle.com/models/d89GuuawT/";
+    const MQTT_TOPIC = "ttky";
 
     let model, webcam, labelContainer, maxPredictions;
     let mqttClient;
@@ -281,5 +281,6 @@
   </script>
 </body>
 </html>
+
 
 
